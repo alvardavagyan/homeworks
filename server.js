@@ -1,8 +1,9 @@
-const http = require('http');
+const http = require("http");
 const server = http.createServer((req, res) => {
-    res.writeHead(200, { 'Content-Type': 'text/plain' });
-    res.end('Hello, World!\n');
+  res.writeHead(200, {"Content-Type": "text/plain"});
+  res.end("Hello World!\n");
 });
-server.listen(3000, () => {
-    console.log('http://localhost:3000/');
+const port = 3000;
+server.listen(port, () => {
+  console.log(`http://localhost:${port}/`);
 });
